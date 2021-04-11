@@ -29,6 +29,7 @@ class _EventFormState extends State<EventForm> {
       fileName = '',
       _regFormLink;
 
+  bool isFeatured=false;
   bool _loading;
   bool filePicked = false;
   File file;
