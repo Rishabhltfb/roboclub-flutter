@@ -40,7 +40,7 @@ class _AdminScreenState extends State<AdminScreen> {
             if (user != null) {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
-                  builder: (context) => ProfileScreen(showInSnackBar: true),
+                  builder: (context) => ProfileScreen(),
                 ),
               );
             } else {

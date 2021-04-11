@@ -21,15 +21,15 @@ import 'package:url_launcher/url_launcher.dart';
 class ProfileScreen extends StatefulWidget {
   final bool viewMode;
   final User member;
-  final bool showInSnackBar;
-  const ProfileScreen({Key key, this.viewMode = false, this.member, this.showInSnackBar = false,})
+  // final bool showInSnackBar;
+  const ProfileScreen({Key key, this.viewMode = false, this.member,})
       : super(key: key);
   @override
   _ProfileScreenState createState() => _ProfileScreenState();
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+  // final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   bool drag = false;
   User _user, _currUser;
 
