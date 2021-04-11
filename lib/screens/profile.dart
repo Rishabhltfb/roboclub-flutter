@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -86,7 +84,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Widget _aboutCard (){
-    Padding(
+    return Padding(
       padding: const EdgeInsets.all(10.0),
       child: Center(
         child: Column(
@@ -146,7 +144,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     List<String> interests = _user.interests.split(',');
 
     Widget _interestCard(){
-       Padding(
+       return Padding(
         padding: const EdgeInsets.all(8.0),
         child: PhysicalModel(
           color: Colors.transparent,
