@@ -36,17 +36,13 @@ class _AdminScreenState extends State<AdminScreen> {
             setState(() {
               _isLoading = true;
             });
-<<<<<<< HEAD
             _auth.signInWithGoogle().then((user) {
               if (user != null) {
-                Provider.of<UserProvider>(context, listen: false).setUser =
-                    user;
+                Provider.of<UserProvider>(context, listen: false).setUser =user;
             }
             setState(() {
                 _isLoading = false;
               });
-=======
->>>>>>> 7ea7faabb851f9c5c9f21b1834c38a63c653f007
             if (user != null) {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
@@ -67,15 +63,6 @@ class _AdminScreenState extends State<AdminScreen> {
                       color: Colors.amber,
                       child: Text('Ok', style: TextStyle(fontSize: vpH*0.025),),
                       onPressed: () => Navigator.of(context).pop(),
-<<<<<<< HEAD
-=======
-                    ),
-                    actions: <Widget>[
-                      FlatButton(
-                        color: Colors.amber,
-                        child: Text('Ok'),
-                        onPressed: () => Navigator.of(context).pop(),
->>>>>>> 7ea7faabb851f9c5c9f21b1834c38a63c653f007
                       ),
                     ],
                   ),
