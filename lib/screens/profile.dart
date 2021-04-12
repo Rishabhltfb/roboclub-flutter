@@ -238,6 +238,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                             padding: const EdgeInsets.all(15.0),
                                             child: Text(
                                               'About',
+                                              maxLines: 10,
                                               style: TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.black
@@ -311,7 +312,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                           _user.interests.isNotEmpty
                                               ? ListView.builder(
                                                   shrinkWrap: true,
-                                                  itemCount: interests.length,
+                                                  itemCount:interests.length > 10
+                                                  ? 10 : interests.length,
                                                   itemBuilder:
                                                       (context, index) {
                                                     return Text(
